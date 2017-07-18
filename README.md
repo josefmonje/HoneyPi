@@ -8,7 +8,21 @@ HoneyPi attempts to offer a reliable indicator of compromise with little to no s
 
 That is why HoneyPi tries to keep it simple compared to other honeypots. HoneyPi only flags the three surefire triggers that would catch most attackers:
  1. Port Scanning Activities
- 2. RDP Connection Attempts
- 3. SMB Connection Attempts
+ 2. FTP Connection Attempts
+ 3. Telnet Connection Attempts
 
 Wrap up this simplicity in a way that is designed to be deployed on a RaspberryPi and you've got a simple honeypot that you can add to your network to get insight when you are under attack.
+
+## Installation
+
+You'll need a Raspberry Pi running Rasbian.
+
+From the Pi, do this:
+ 1. wget https://github.com/mattymcfatty/HoneyPi/archive/v01.zip
+ 2. unzip v01.zip
+ 3. cd HoneyPi-01
+ 4. chmod +x *.sh
+ 4. sudo ./honeyPiInstaller.sh
+ 5. Follow the prompts.
+ 
+Please note: Installing this will do some things to your Raspberry Pi. Most notably, it will change your iptables. Please proceed with caution if you are using this Raspberry Pi for other purposes.
